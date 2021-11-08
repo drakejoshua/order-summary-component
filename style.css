@@ -1,0 +1,37 @@
+:root{
+    font-size: 10px;
+    --font: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* styling the parent container */
+#parent-ctn{
+    width: 30%;
+    border-radius: 2em;
+    margin: auto;
+}
+
+/* styling the hero image */
+#hero-image{
+    width: 100%;
+    display: block;
+}
+
+/* styling the descrition */
+div#description{
+    padding: 2em 3em;
+}
+
+/* styling the decription's components */
+h3{
+    font-size: 3em;
+    font-family: var(--font);
+    text-align: center;
+}
