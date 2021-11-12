@@ -41,7 +41,7 @@ div.useless-div:nth-child(9){
 #parent-ctn{
     grid-area: parent-div;
     border-radius: 1.5em;
-    box-shadow: 0em 0em 2.5em lightgray;
+    box-shadow: 0em 0em 3.5em lightgray;
     background: transparent;
 }
 
