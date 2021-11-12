@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/drakejoshua/order-summary-component)
-- Live Site URL: [Add live site URL here](https://drakejoshua.github.io/order-summary-component)
+- Solution URL: [https://github.com/drakejoshua/order-summary-component]
+- Live Site URL: [https://drakejoshua.github.io/order-summary-component]
 
 ## My process
 Firstly had to mark up the whole html and then applied a stylesheet. Didn't know about the style guide until now so fonts and colors may not correspond with what was in the style guide as i originally thought we were to use our discretion.
@@ -47,11 +47,11 @@ Firstly had to mark up the whole html and then applied a stylesheet. Didn't know
 ### What I learned
 
 Majorly, I learn't more about the grid layout and how it can work in accordance with responsive web design.
-Also, i also learnt more on how i can optimize the use of opacity and disply layout
+Also, i also learnt more on how i can optimize the use of opacity and display layout
 
 ### Continued development
 
-I want to learn how to do beter responsive design
+I want to learn how to do better responsive design
 
 ## Author
 
