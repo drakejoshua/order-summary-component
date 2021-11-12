@@ -175,7 +175,7 @@ p{
         text-transform: capitalize;
     }
     body{
-        background-image: url("pattern-background-desktop.svg");
+        background-image: url("pattern-background-mobile.svg");
         background-repeat: no-repeat;
         background-size: cover;
         display: grid;
@@ -213,7 +213,7 @@ p{
         text-transform: capitalize;
     }
     body{
-        background-image: url("pattern-background-desktop.svg");
+        background-image: url("pattern-background-mobile.svg");
         background-repeat: no-repeat;
         background-size: cover;
         display: grid;
@@ -251,7 +251,7 @@ p{
         text-transform: capitalize;
     }
     body{
-        background-image: url("pattern-background-desktop.svg");
+        background-image: url("pattern-background-mobile.svg");
         background-repeat: no-repeat;
         background-size: cover;
         display: grid;
@@ -289,7 +289,7 @@ p{
         text-transform: capitalize;
     }
     body{
-        background-image: url("pattern-background-desktop.svg");
+        background-image: url("pattern-background-mobile.svg");
         background-repeat: no-repeat;
         background-size: cover;
         display: grid;
@@ -327,7 +327,7 @@ p{
         text-transform: capitalize;
     }
     body{
-        background-image: url("pattern-background-desktop.svg");
+        background-image: url("pattern-background-mobile.svg");
         background-repeat: no-repeat;
         background-size: cover;
         display: grid;
