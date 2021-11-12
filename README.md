@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![github](https:/solution-screenshot.jpg)
+![github](https://github.com/drakejoshua/order-summary-component/blob/main/solution-screenshot.jpg)
 
 ### Links
 
