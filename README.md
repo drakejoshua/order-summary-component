@@ -23,7 +23,7 @@ This is a order summary component created by mabawonku joshua
 Users should be able to:
 
 - See hover states for interactive elements
-- View this page as totally responsive on any deive out there
+- View this page as totally responsive on any device out there
 
 ### Screenshot
 
