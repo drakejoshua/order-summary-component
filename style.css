@@ -1,8 +1,6 @@
-:root{
-    font-size: 10px;
-    --font: Arial, Helvetica, sans-serif;
-    text-transform: capitalize;
-}
+/* created by mabawonku joshua */
+
+/* creating page default styles */
 body{
     margin: 0;
     padding: 0;
@@ -11,27 +9,514 @@ body{
     box-sizing: border-box;
 }
 
+/* default styling */
+
+/* naming the useless div for proper grid function and adding a little bit of height*/
+div.useless-div:nth-child(1){
+    grid-area: useless-div-1;
+}
+div.useless-div:nth-child(2){
+    grid-area: useless-div-2;
+}
+div.useless-div:nth-child(4){
+    grid-area: useless-div-3;
+}
+div.useless-div:nth-child(5){
+    grid-area: useless-div-4;
+}
+div.useless-div:nth-child(6){
+    grid-area: useless-div-5;
+}
+div.useless-div:nth-child(7){
+    grid-area: useless-div-6;
+}
+div.useless-div:nth-child(8){
+    grid-area: useless-div-7;
+}
+div.useless-div:nth-child(9){
+    grid-area: useless-div-8;
+}
+
 /* styling the parent container */
 #parent-ctn{
-    width: 30%;
-    border-radius: 2em;
-    margin: auto;
+    grid-area: parent-div;
+    border-radius: 1.5em;
+    box-shadow: 0em 0em 2.5em lightgray;
+    background: transparent;
 }
 
 /* styling the hero image */
 #hero-image{
     width: 100%;
     display: block;
+    border-radius: 1.5em 1.5em 0em 0em;
 }
 
 /* styling the descrition */
 div#description{
-    padding: 2em 3em;
+    padding: 2em 5em;
+    background: white;
+    border-radius: 0em 0em 1.5em 1.5em;
 }
 
 /* styling the decription's components */
 h3{
-    font-size: 3em;
+    font-size: 2.5em;
     font-family: var(--font);
     text-align: center;
+    opacity: 0.8;
+}
+p{
+    line-height: 1.6em;
+    text-align: center;
+    width: 90%;
+    opacity: 0.6;
+    margin: 1.5em auto;
+    text-transform: none;
+    font-family: var(--font);
+    font-size: 1.5em;
+}
+
+
+/* creating a inline-block display to set following elements to follow each other */
+#options, #payment-holder, #music-icon{
+    display: inline-block;
+}
+
+/* plan duration and price set to block to stay on seerate lines and same styles */
+#plan-duration, #plan-price{
+    display: block;
+    font-family: var(--font);
+    font-size: 1.3em;
+    padding: 0.3em 0.8em;
+}
+
+
+/* continued styling of description components */
+#payment-info-ctn{
+    background-color: rgba(206, 233, 236, 0.2);
+    padding: 1.5em 1.5em;
+    border-radius: 1.5em;
+    margin: 1.3em auto;
+}
+#options{
+    font-size: 1.3em;
+    font-weight: bold;
+    transform: translate( 0em, -1.1em);
+    color: rgb(13, 13, 160);
+    font-family: var(--font);
+}
+#payment-holder{
+    width: 65%;
+}
+#music-icon{
+    width: 4em;
+    height: 4em;
+    margin: 0.6em 0em 0em 0em;
+}
+#plan-duration{
+    font-family: "Arial Rounded MT", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: rgb(10, 10, 82);
+}
+#plan-price{
+    color: rgba(39, 39, 138, 0.6);
+}
+
+
+/* styling the "proceeed to payment" and "cancel order" buttons */
+
+/* setting the display to display:block to inline element rendering and adding common styles */
+#confirm-btn, #cancel-btn{
+    display: block;
+    padding: 1.2em;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-family: var(--font);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* continue the normal styling */
+#confirm-btn{
+    background-color: rgba(44, 44, 209, 0.9);
+    margin: 2em auto 1.3em auto;
+    color: white;
+    border-radius: 1em;
+    box-shadow: 0em 0.7em 1em lightgray;
+}
+#cancel-btn{
+    color: rgb(116, 114, 114);
+}
+
+/* adding active hover states */
+#options:hover{
+    text-decoration: none;
+    color: rgba(13, 13, 160, 0.6);
+}
+#confirm-btn:hover{
+    background-color: rgba(44, 44, 209, 0.7);
+}
+#cancel-btn:hover{
+    color: rgb(5, 16, 75);
+}
+
+
+/* adding media breakpoints -> responsive design section*/
+
+/* created by mabawonku joshua */
+
+/* for large mobile-phones */
+@media only screen and ( max-width:428px ) and ( min-width:377px ){
+    :root{
+        font-size: 6px;
+        --font: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-gap: 10% 0%;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 20% 50% 20%;
+        grid-template-areas: 'useless-div-1 useless-div-2 useless-div-3' 'useless-div-4 parent-div useless-div-5' 'useless-div-6 useless-div-7 useless-div-8';
+    }
+    #payment-holder{
+        width: 60%;
+    }
+    h3{
+        font-size: 4.167em;
+    }
+    p{
+        font-size: 2.7em;
+    }
+    #music-icon{
+        height: 6.667em;
+        width: 6.667em;
+    }
+    #options{
+        font-size: 2.167em;
+    }
+    #plan-price, #plan-duration, #confirm-btn, #cancel-btn{
+        font-size: 2.333em;
+    }
+}
+
+/* for medium mobile-phones */
+@media only screen and ( max-width:375px ) and ( min-width:321px ){
+    :root{
+        font-size: 4px;
+        --font: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-gap: 10% 0%;
+        grid-template-columns: 3% 94% 3%;
+        grid-template-rows: 20% 50% 20%;
+        grid-template-areas: 'useless-div-1 useless-div-2 useless-div-3' 'useless-div-4 parent-div useless-div-5' 'useless-div-6 useless-div-7 useless-div-8';
+    }
+    #payment-holder{
+        width: 60%;
+    }
+    h3{
+        font-size: 6.25em;
+    }
+    p{
+        font-size: 3.75em;
+    }
+    #music-icon{
+        height: 10em;
+        width: 10em;
+    }
+    #options{
+        font-size: 3.25em;
+    }
+    #plan-price, #plan-duration, #confirm-btn, #cancel-btn{
+        font-size: 3.5em;
+    }
+}
+
+/* for small mobile-phones */
+@media only screen and ( max-width:320px ) and ( min-width:0px ){
+    :root{
+        font-size: 4px;
+        --font: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-gap: 10% 0%;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 20% 50% 20%;
+        grid-template-areas: 'useless-div-1 useless-div-2 useless-div-3' 'useless-div-4 parent-div useless-div-5' 'useless-div-6 useless-div-7 useless-div-8';
+    }
+    #payment-holder{
+        width: 60%;
+    }
+    h3{
+        font-size: 6.25em;
+    }
+    p{
+        font-size: 3.75em;
+    }
+    #music-icon{
+        height: 10em;
+        width: 10em;
+    }
+    #options{
+        font-size: 3.25em;
+    }
+    #plan-price, #plan-duration, #confirm-btn, #cancel-btn{
+        font-size: 3.5em;
+    }
+}
+
+/* for small tablets */
+@media only screen and ( max-width:622px ) and ( min-width:429px ){
+    :root{
+        font-size: 6px;
+        --font: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-gap: 10% 0%;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 20% 50% 20%;
+        grid-template-areas: 'useless-div-1 useless-div-2 useless-div-3' 'useless-div-4 parent-div useless-div-5' 'useless-div-6 useless-div-7 useless-div-8';
+    }
+    #payment-holder{
+        width: 60%;
+    }
+    h3{
+        font-size: 4.167em;
+    }
+    p{
+        font-size: 2.5em;
+    }
+    #music-icon{
+        height: 6.667em;
+        width: 6.667em;
+    }
+    #options{
+        font-size: 2.167em;
+    }
+    #plan-price, #plan-duration, #confirm-btn, #cancel-btn{
+        font-size: 2.333em;
+    }
+}
+
+/* for medium tablets */
+@media only screen and ( max-width:768px ) and ( min-width:623px ){
+    :root{
+        font-size: 6px;
+        --font: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-gap: 10% 0%;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: 20% 50% 20%;
+        grid-template-areas: 'useless-div-1 useless-div-2 useless-div-3' 'useless-div-4 parent-div useless-div-5' 'useless-div-6 useless-div-7 useless-div-8';
+    }
+    #payment-holder{
+        width: 60%;
+    }
+    h3{
+        font-size: 4.167em;
+    }
+    p{
+        font-size: 2.5em;
+    }
+    #music-icon{
+        height: 6.667em;
+        width: 6.667em;
+    }
+    #options{
+        font-size: 2.167em;
+    }
+    #plan-price, #plan-duration, #confirm-btn, #cancel-btn{
+        font-size: 2.333em;
+    }
+}
+
+/* for large tablets and large-screened devices */
+@media only screen and ( max-width:820px ) and ( min-width:769px ){
+    :root{
+        font-size: 8px;
+        --font: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-gap: 10% 0%;
+        grid-template-columns: 27.5% 45% 27.5%;
+        grid-template-rows: 20% 50% 20%;
+        grid-template-areas: 'useless-div-1 useless-div-2 useless-div-3' 'useless-div-4 parent-div useless-div-5' 'useless-div-6 useless-div-7 useless-div-8';
+    }
+    #payment-holder{
+        width: 60%;
+    }
+    h3{
+        font-size: 3.125em;
+    }
+    p{
+        font-size: 1.875em;
+    }
+    #music-icon{
+        height: 5em;
+        width: 5em;
+    }
+    #options{
+        font-size: 1.625em;
+    }
+    #plan-price, #plan-duration, #confirm-btn, #cancel-btn{
+        font-size: 1.625em;
+    }
+}
+
+/* for mini laptops */
+@media only screen and ( max-width:971px ) and ( min-width:821px ){
+    :root{
+        font-size: 8px;
+        --font: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-gap: 10% 0%;
+        grid-template-columns: 27.5% 45% 27.5%;
+        grid-template-rows: 20% 50% 20%;
+        grid-template-areas: 'useless-div-1 useless-div-2 useless-div-3' 'useless-div-4 parent-div useless-div-5' 'useless-div-6 useless-div-7 useless-div-8';
+    }
+    #payment-holder{
+        width: 65%;
+    }
+    h3{
+        font-size: 3.125em;
+    }
+    p{
+        font-size: 1.875em;
+    }
+    #music-icon{
+        height: 5em;
+        width: 5em;
+    }
+    #options{
+        font-size: 1.625em;
+    }
+    #plan-price, #plan-duration, #confirm-btn, #cancel-btn{
+        font-size: 1.625em;
+    }
+    #payment-holder{
+        width: 55%;
+    }
+}
+
+/* for small laptops */
+@media only screen and ( max-width:1024px ) and ( min-width:972px ){
+    :root{
+        font-size: 10px;
+        --font: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-gap: 10% 0%;
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: 20% 50% 20%;
+        grid-template-areas: 'useless-div-1 useless-div-2 useless-div-3' 'useless-div-4 parent-div useless-div-5' 'useless-div-6 useless-div-7 useless-div-8';
+    }
+    #payment-holder{
+        width: 60%;
+    }
+}
+
+/* for medium laptops */
+@media only screen and ( max-width:1262px ) and ( min-width:1025px ){
+    :root{
+        font-size: 10px;
+        --font: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-gap: 10% 0%;
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: 20% 50% 20%;
+        grid-template-areas: 'useless-div-1 useless-div-2 useless-div-3' 'useless-div-4 parent-div useless-div-5' 'useless-div-6 useless-div-7 useless-div-8';
+    }
+    #payment-holder{
+        width: 60%;
+    }
+}
+
+/* for large laptops */
+@media only screen and ( max-width:1499px ) and ( min-width:1263px ){
+    :root{
+        font-size: 10px;
+        --font: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-gap: 10% 0%;
+        grid-template-columns: 32% 36% 32%;
+        grid-template-rows: 20% 50% 20%;
+        grid-template-areas: 'useless-div-1 useless-div-2 useless-div-3' 'useless-div-4 parent-div useless-div-5' 'useless-div-6 useless-div-7 useless-div-8';
+    }
+    #payment-holder{
+        width: 60%;
+    }
+}
+
+/* for very large laptops and 4k screens*/
+@media only screen and ( min-width:1500px ) {
+    :root{
+        font-size: 10px;
+        --font: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+    }
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-gap: 10% 0%;
+        grid-template-columns: 36% 28% 36%;
+        grid-template-rows: 20% 50% 20%;
+        grid-template-areas: 'useless-div-1 useless-div-2 useless-div-3' 'useless-div-4 parent-div useless-div-5' 'useless-div-6 useless-div-7 useless-div-8';
+    }
 }
